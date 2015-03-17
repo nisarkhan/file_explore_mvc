@@ -1,0 +1,7 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@using (Html.BeginForm("Index", "ExternalFile", FormMethod.Post))
+{
+    <input type="text" id="txtHttpUrl" name="txtHttpUrl" /> <input type="submit" id="btnSumbit" value="Search"/>
+}

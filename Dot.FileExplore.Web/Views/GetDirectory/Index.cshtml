@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Not Found";
+}
+<link href="~/Content/style.css" rel="stylesheet" />
+<div class="error" style="margin-left:125px;">
+    @ViewBag.Message
+</div>
+<div style="left: 45%; position: absolute; ">
+    @Html.ActionLink("<< Back to File Explore", "Index", "FileExplore")
+</div>

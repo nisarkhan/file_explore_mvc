@@ -1,0 +1,19 @@
+﻿@model Dot.FileExplore.Web.Models.FileExploreModel
+@{
+    ViewBag.Title = "File Manager";
+}
+<link href="~/Content/style.css" rel="stylesheet" />
+<link href="~/Content/themes/default/style.min.css" rel="stylesheet" />
+
+<h2>@Html.DisplayFor(x => x.FileTitle)</h2>
+@Html.HiddenFor(x => x.RootPath, new { id = "hdnPath" })
+<div id="FolderTree">
+
+</div>
+<div class="error"></div>
+<div class="backOpt"><img id="imgBack" src="~/Content/images/back.png" /><div id="divPath">@Html.DisplayFor(x => x.CurrentPath)</div></div>
+<div id="ViewFolder">
+
+</div>
+<script src="~/Scripts/jstree.min.js"></script>
+<script src="~/Scripts/FileExplore/filemanager.js"></script>

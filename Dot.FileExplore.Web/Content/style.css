@@ -1,0 +1,112 @@
+﻿body {
+    font-family: verdana,helvetica,arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: #404040;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+#FolderTree {
+    float: left;
+    width: 250px;
+    height: 540px;
+    display: block;
+    border-right: solid 1px #808080;
+    overflow: auto;
+}
+
+#ViewFolder {
+    display: block;
+    height: 540px;
+    overflow-y: auto;
+    margin-left: 139px;
+    width: 700px;
+    margin-bottom: 5px;
+}
+
+    #ViewFolder .inner img {
+        width: 25px;
+        height: 25px;
+        display: block;
+        /* For vertical center - margin: 0 auto;
+       For horizontal center - margin: auto 0px;*/
+        margin: auto auto;
+    }
+
+.folder, .file {
+    width: 100px;
+    cursor: pointer;
+}
+
+.ftext {
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.fdate, .fsize {
+    padding-left: 10px;
+    text-align: right;
+}
+
+.tbl {
+    width: 100%;
+}
+
+.tright {
+    text-align: right;
+}
+
+.tname {
+    padding-left: 10px;
+}
+
+#divPath {
+    float: left;
+    width: 670px;
+    border-bottom: solid 1px #808080;
+    padding-bottom: 2px;
+}
+
+.search {
+    margin-left: 612px;
+    display: block;
+    width: 700px;
+}
+
+.backOpt {
+    display: block;
+    width: 700px;
+    margin-left: 260px;
+}
+
+    .backOpt img {
+        float: left;
+        margin-left: -5px;
+        margin-right: 2px;
+        cursor: pointer;
+    }
+
+#txtHttpUrl {
+    width: 228px;
+}
+
+.info, .success, .warning, .error, .validation {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    margin-left: 260px;
+    width:700px;
+}
+
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
